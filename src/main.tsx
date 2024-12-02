@@ -6,6 +6,7 @@ import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
+    {/* в документаци для настройки темы она передантся именно в ChakraProviderhttps://www.chakra-ui.com/docs/theming/overview !!но при установке там рекмендуется именно Provider - */}
     <Provider>
       <App />
     </Provider>

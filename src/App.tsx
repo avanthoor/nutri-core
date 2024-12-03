@@ -1,11 +1,5 @@
-import RecipePage from "./racipePage";
-
 function App() {
-  return (
-    <>
-      <RecipePage />
-    </>
-  );
+  return <></>;
 }
 
 export default App;

@@ -21,11 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    // TODO:добавила для импортов как в документации
-    "paths": {
-      "@/*": ["./src/*"],
-      "@assets/*": ["./src/assets/*"]
-    }
   },
   "include": ["src"]
 }

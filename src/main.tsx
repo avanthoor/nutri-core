@@ -3,6 +3,17 @@ import { Provider } from "@/components/ui/provider";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
+import { ChakraProvider, createSystem, defineConfig } from "@chakra-ui/react";
+
+// TODO: это для темы чтобы передавать в СhakraProvider
+// const config = defineConfig({
+//   theme: {
+//     tokens: {
+//       colors: {},
+//     },
+//   },
+// })
+// const system = createSystem(config)
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -12,5 +23,7 @@ createRoot(document.getElementById("root")!).render(
     <Provider>
       <App />
     </Provider>
-  </StrictMode>,
+
+    
+  </StrictMode>
 );

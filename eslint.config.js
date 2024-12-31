@@ -23,6 +23,8 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
+      "arrow-body-style": ["error", "as-needed"],
+      "semi": ["error", "always"],
     },
   },
 );

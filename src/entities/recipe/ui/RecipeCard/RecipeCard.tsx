@@ -1,7 +1,9 @@
-import RecipeCardTitle from "@entities/recipe/ui/RecipeTitle";
-import RecipeIngredientCard from "@entities/recipe/ui/RecipeLeftColumn";
+
 import { Box, Grid, GridItem, Image } from "@chakra-ui/react";
+
 import Description from "@entities/recipe/ui/RecipeDescription";
+import RecipeIngredientCard from "@entities/recipe/ui/RecipeLeftColumn";
+import RecipeCardTitle from "@entities/recipe/ui/RecipeTitle";
 import decor from "@shared/assets/Component1.png";
 import { RecipeCardProps } from "./RecipeCard.types";
 

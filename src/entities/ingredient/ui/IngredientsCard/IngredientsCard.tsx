@@ -1,11 +1,12 @@
 import { FC } from "react";
 import { Button, Grid, GridItem, HStack, Input, Text } from "@chakra-ui/react";
-import LineBox from "@shared/ui/LineBox";
 import {Flex } from "@chakra-ui/react";
-import { hoverIconButton } from "@entities/recipe/ui/RecipeTitle/RecipeTitle";
-import { CiShoppingCart } from "react-icons/ci";
 import { BsPlusSquare } from "react-icons/bs";
+import { CiShoppingCart } from "react-icons/ci";
 import { PiMinusSquareLight } from "react-icons/pi";
+
+import { hoverIconButton } from "@entities/recipe/ui/RecipeTitle/RecipeTitle";
+import LineBox from "@shared/ui/LineBox";
 
 interface IngredientsCard {
   // просто лень😒

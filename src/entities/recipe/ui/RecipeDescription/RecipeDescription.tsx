@@ -1,6 +1,7 @@
 import React, { FC } from "react";
-import LineBox from "@shared/ui/LineBox";
 import { Box, Flex, HStack, Text } from "@chakra-ui/react";
+
+import LineBox from "@shared/ui/LineBox";
 
 interface RecipeDescription {
     // просто лень🐱

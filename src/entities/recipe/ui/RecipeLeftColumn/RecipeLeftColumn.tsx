@@ -1,7 +1,8 @@
-import IngredientsCard from "@entities/ingredient/ui/IngredientsCard";
+import { FC } from "react";
 import { Grid, GridItem } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
-import { FC } from "react";
+
+import IngredientsCard from "@entities/ingredient/ui/IngredientsCard";
 
 interface RecipeLeftColumn {
   img: string;

@@ -1,6 +1,7 @@
+import { Flex, GridItem } from "@chakra-ui/react";
+
 import { mockRecipe } from "@entities/recipe/models/recipe.data";
 import RecipeCard from "@entities/recipe/ui/RecipeCard";
-import { Flex, GridItem } from "@chakra-ui/react";
 
 const RecipePage = () => (
     <GridItem colSpan={5}>

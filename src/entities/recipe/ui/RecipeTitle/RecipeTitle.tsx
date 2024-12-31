@@ -1,8 +1,9 @@
-import LineBox from "@shared/ui/LineBox";
+import { FC } from "react";
 import { Box, Flex, IconButton, Text } from "@chakra-ui/react";
 import { BsSave } from "react-icons/bs";
-import { FC } from "react";
 import { SlNote } from "react-icons/sl";
+
+import LineBox from "@shared/ui/LineBox";
 
 interface RecipeCardTitle {
   title: string;

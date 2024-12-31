@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ts:check": "tsc --noEmit --project tsconfig.app.json",
+    "prepare": "husky"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.2.1",

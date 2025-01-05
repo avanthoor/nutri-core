@@ -8,9 +8,9 @@ import {
 } from "../../shared/ui/Chakra/color-mode";
 
 const ChakraCustomProvider = (props: ColorModeProviderProps) => (
-    <ChakraProvider value={defaultSystem}>
-      <ColorModeProvider {...props} />
-    </ChakraProvider>
+  <ChakraProvider value={defaultSystem}>
+    <ColorModeProvider {...props} />
+  </ChakraProvider>
 );
   
 export default ChakraCustomProvider;

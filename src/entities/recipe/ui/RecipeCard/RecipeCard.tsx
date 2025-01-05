@@ -1,55 +1,66 @@
 
-import { Box, Grid, GridItem, Image } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 
-import Description from "@entities/recipe/ui/RecipeDescription";
-import RecipeIngredientCard from "@entities/recipe/ui/RecipeLeftColumn";
-import RecipeCardTitle from "@entities/recipe/ui/RecipeTitle";
 import decor from "@shared/assets/Component1.png";
+import LineBox from "@shared/ui/LineBox";
 import { RecipeCardProps } from "./RecipeCard.types";
+import RecipeCardHeader from "./RecipeCardHeader";
 
 const RecipeCard: React.FC<RecipeCardProps> = (props) => {
   const { 
-    descriptions,
     difficultyLevel,
-    img,
-    ingredients,
-    time,
+    image,
     title,
-    type
+    type,
+    cookingTime,
+    ingredientsCalculatingCardSlot,
+    instructionsSlot
   } = props;
 
   return (
-    <Box bg="white" w="940px" p={25} color="black" h="auto" shadow="lg">
+    <Box bg="white" color="black" h="auto" p={25} shadow="lg" w="940px">
       <Grid
-        templateRows="auto"
-        templateColumns="repeat(3, 1fr)"
-        h="auto"
         gap={22}
+        h="auto"
+        templateColumns="repeat(3, 1fr)"
+        templateRows="auto"
       >
         <GridItem colSpan={3}>
-          <RecipeCardTitle
+          <RecipeCardHeader
+            difficultyLevel={difficultyLevel}
+            time={cookingTime}
             title={title}
             type={type}
-            difficultyLevel={difficultyLevel}
-            time={time} />
+          />
         </GridItem>
 
         <GridItem colSpan={1}>
           <Box h="auto">
-            <RecipeIngredientCard
-              img={img}
-              ingredients={ingredients} />
+            <Grid h="auto" templateRows="auto">
+              <GridItem>
+                <Image h="308px" src={image} w="100%" />
+              </GridItem>
+              <GridItem>
+                {ingredientsCalculatingCardSlot}
+              </GridItem>
+            </Grid>
           </Box>
         </GridItem>
 
         <GridItem colSpan={2}>
           <Box h="auto">
-            <Description descriptions={descriptions} />
+            <Box>
+              <LineBox>
+                <Flex align="center" justify="center">
+                  <Text>Инструкция</Text>
+                </Flex>
+              </LineBox>
+              {instructionsSlot}
+            </Box>
           </Box>
         </GridItem>
 
         <GridItem colSpan={3}>
-          {/* TODO: отредактировать картинку (дополнительно: на каждую категорию разный декор) */}
           <Image src={decor} />
         </GridItem>
       </Grid>

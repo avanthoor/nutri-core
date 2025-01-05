@@ -1,8 +1,14 @@
-import { Ingredient } from "../../ingredient/model/Ingredient.types";
+export interface Ingredient {
+  name: string;
+  quantity: number;
+  unit: string;
+  isChecked: boolean;
+}
 
-export type RecipeDescription = {
-  step: number;
-  value: string;
+
+export type InstructionRecipeStep = {
+  number: number;
+  text: string;
 }
 
 export interface Recipe {
@@ -12,5 +18,7 @@ export interface Recipe {
   time: string;
   img: string;
   ingredients: Ingredient[];
-  descriptions: RecipeDescription[];
+  instruction: {
+    steps: InstructionRecipeStep[];
+  }
 };

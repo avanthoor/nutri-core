@@ -20,10 +20,10 @@ export const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
       props;
     return (
       <ChakraAvatar.Root ref={ref} {...rest}>
-        <AvatarFallback name={name} icon={icon}>
+        <AvatarFallback icon={icon} name={name}>
           {fallback}
         </AvatarFallback>
-        <ChakraAvatar.Image src={src} srcSet={srcSet} loading={loading} />
+        <ChakraAvatar.Image loading={loading} src={src} srcSet={srcSet} />
         {children}
       </ChakraAvatar.Root>
     );
@@ -66,7 +66,7 @@ export const AvatarGroup = React.forwardRef<HTMLDivElement, AvatarGroupProps>(
     const { size, variant, borderless, ...rest } = props;
     return (
       <ChakraAvatar.PropsProvider value={{ size, variant, borderless }}>
-        <Group gap="0" spaceX="-3" ref={ref} {...rest} />
+        <Group gap="0" ref={ref} spaceX="-3" {...rest} />
       </ChakraAvatar.PropsProvider>
     );
   },

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import RecipePage from '@pages/RecipePage';
+import RecipePage from '@pages/recipe/ui';
 import ChakraCustomProvider from './providers/ChakraCustomProvider';
 
 import './styles/global.scss';

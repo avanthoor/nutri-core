@@ -15,56 +15,58 @@ export const mockRecipe: Recipe = {
     { name: "яйца", quantity: 1, unit: "шт", isChecked: true },
     { name: "сахар", quantity: 200, unit: "гр", isChecked: true },
   ],
-  descriptions: [
-    {
-      step: 1,
-      value:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
-    },
-    {
-      step: 2,
-      value:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
-    },
-    {
-      step: 3,
-      value:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
-    },
-    {
-      step: 4,
-      value:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
-    },
-    {
-      step: 5,
-      value:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
-    },
-    {
-      step: 6,
-      value:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
-    },
-    {
-      step: 7,
-      value:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
-    },
-    {
-      step: 8,
-      value:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
-    },
-    {
-      step: 9,
-      value:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
-    },
-    {
-      step: 10,
-      value:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
-    },
-  ],
+  instruction: {
+    steps: [
+      {
+        number: 1,
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
+      },
+      {
+        number: 2,
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
+      },
+      {
+        number: 3,
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
+      },
+      {
+        number: 4,
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
+      },
+      {
+        number: 5,
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
+      },
+      {
+        number: 6,
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
+      },
+      {
+        number: 7,
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
+      },
+      {
+        number: 8,
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
+      },
+      {
+        number: 9,
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
+      },
+      {
+        number: 10,
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit neque nec ante",
+      },
+    ],
+  }
 };
